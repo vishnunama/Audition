@@ -1,23 +1,47 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Home from './components/Home';
+import VideoSection from './components/VideoSection';
+import EventSchedule from './components/EventSchedule';
+import OurSpeaker from './components/OurSpeaker';
+import EventGift from './components/EventGift';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import RegistrationPage from './components/RegistrationPage';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import SelectLanguage from './components/SelectLanguage';
+import HindiRegistrationPage from './components/HindiRegistrationPage';
+import QrCode from './components/QrCode';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+         <Header/>
+         <Navbar/>
+      <Routes>
+     
+     <Route path='/' element={ <Home/>}/>
+     <Route path='/Home' element={ <Home/>}/>
+     {/* <Route path='/VideoSection' element={<VideoSection/>}/> */}
+     {/* <Route path='/EventSchedule' element={ <EventSchedule/>}/> */}
+     {/* <Route path='/OurSpeaker' element={ <OurSpeaker/>}/> */}
+     <Route path='/EventGift' element={<EventGift/>}/>
+     <Route path='/RegistrationPage'element={<RegistrationPage/>}/>
+     <Route path='/HindiRegistrationPage'element={<HindiRegistrationPage/>}/>
+
+     <Route path='/SelectLanguage' element={<SelectLanguage/>}/>
+     <Route path='/VideoSection' element={<VideoSection/>}/>
+     <Route path='/EventSchedule' element={<EventSchedule/>}/>
+     <Route path='/OurSpeaker' element={<OurSpeaker/>}/>
+     <Route path='/QrCode' element={<QrCode/>}/>
+
+
+      </Routes>
+      <Footer/>
+      </BrowserRouter>
     </div>
   );
 }
