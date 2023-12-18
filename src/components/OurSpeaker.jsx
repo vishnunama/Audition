@@ -28,7 +28,7 @@ function OurSpeaker() {
           <div className="speaker-item">
             <div className="speaker-inner">
               <div className="speaker-thumb">
-                <img  src="/84.png" alt="speaker" />
+                <img  src="/85.png" alt="speaker" />
               </div>
               <div className="speaker-content">
                 <div className="spkr-content-title d-flex flex-wrap justify-content-between">
@@ -56,7 +56,7 @@ function OurSpeaker() {
           <div className="speaker-item">
             <div className="speaker-inner">
               <div className="speaker-thumb">
-                <img src="/69.png" alt="speaker" />
+                <img src="/86.png" alt="speaker" />
               </div>
               <div className="speaker-content">
                 <div className="spkr-content-title d-flex flex-wrap justify-content-between">

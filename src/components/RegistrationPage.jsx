@@ -263,7 +263,7 @@ function RegistrationPage() {
                   <button type="submit" name="submit" className="btn-form-func">
                     <span className="btn-form-func-content">Submit</span>
                     <span className="icon"><SendOutlinedIcon  className="fa fa-paper-plane" />
-    <button><QrCode/></button>
+    {/* <button><QrCode/></button> */}
                      
                     </span>
                   </button>

@@ -14,10 +14,11 @@ function SelectLanguage() {
       <div >
      
       <h1 style={{color:"#4680EF",fontFamily:"arial"}}  className="form-title">Fill Up This Form</h1>
-     <div>
+     <div className='font-container-in' style={{display:"flex"}}>
       
-      <button className="my-4 md:my-16 mx-8 px-14 md:px-24 py-3 bg-gradient-to-r from-[#F72585] to-[#7209B7] hover:from-[#7209B7] hover:to-[#F72585] text-xl text-white font-semibold drop-shadow-lg rounded-full" href="image" onClick={() => navigate("/RegistrationPage")}><ArrowRightAltIcon sx={{marginRight:"10px"}}/> English</button>
-      <button className="my-4 md:my-16 mx-8 px-14 md:px-24 py-3 bg-gradient-to-r from-[#F72585] to-[#7209B7] hover:from-[#7209B7] hover:to-[#F72585] text-xl text-white font-semibold drop-shadow-lg rounded-full" href="image" onClick={() => navigate("/RegistrationPage")}><ArrowRightAltIcon sx={{marginRight:"9px"}}/> Hindi</button>
+      <button style={{border:"none",padding:"0px 90px"}} className="my-4 md:my-16 mx-8 px-14 md:px-24 py-3 bg-gradient-to-r from-[#F72585] to-[#7209B7] hover:from-[#7209B7] hover:to-[#F72585] text-xl text-white font-semibold drop-shadow-lg rounded-full" href="image" onClick={() => navigate("/RegistrationPage")}> English</button>
+      
+      <button style={{border:"none",padding:"0px 100px"}} className="my-4 md:my-16 mx-8 px-14 md:px-24 py-3 bg-gradient-to-r from-[#F72585] to-[#7209B7] hover:from-[#7209B7] hover:to-[#F72585] text-xl text-white font-semibold drop-shadow-lg rounded-full" href="image" onClick={() => navigate("/HindiRegistrationPage")}>Hindi</button>
       </div>
       </div>
      </div>
@@ -29,5 +30,3 @@ function SelectLanguage() {
 export default SelectLanguage;
 
 
-
-<a target="_blank" className="my-4 md:my-16 mx-8 px-14 md:px-24 py-3 bg-gradient-to-r from-[#F72585] to-[#7209B7] hover:from-[#7209B7] hover:to-[#F72585] text-xl text-white font-semibold drop-shadow-lg rounded-full" href="image">English</a>

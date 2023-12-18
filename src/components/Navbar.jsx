@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css'; // Assuming you have a CSS file for your Navbar styles
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import QrCode from './QrCode';
+import SwipeableTemporaryDrawer from './resnav';
+
 
 
 function Navbar() {
-  const [isDrawerOpen, setDrawerOpen] = useState(false);
+  const [isDrawerOpen, setDrawerOpen] = useState(true);
 
   const toggleDrawer = () => {
     setDrawerOpen(!isDrawerOpen);
@@ -49,37 +51,53 @@ function Navbar() {
     </div>
             <div>
               
-                <div className="menu-area">
-                        <ul className="menu">
-                            <li>
-                                <a onClick={()=>navigate('/Home')} href="">Home</a>
-                            </li>
+                  <div className="menu-area">
+      <ul className="menu">
+        <li>
+          <Link onClick={() => navigate('/Home')} to="/Home">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link onClick={() => navigate('/VideoSection')} to="/VideoSection">
+            About us
+          </Link>
+        </li>
+        <li>
+          <Link onClick={() => navigate('/EventSchedule')} to="/EventSchedule">
+            Event Schedule
+          </Link>
+        </li>
+        <li>
+          <Link onClick={() => navigate('/OurSpeaker')} to="/OurSpeaker">
+            Speakers
+          </Link>
+        </li>
+        <li>
+          <Link className="register-now" onClick={() => navigate('/SelectLanguage')} to="/SelectLanguage">
+            <AssignmentIcon sx={{ color: 'white' }} />
+            <span style={{ color: 'white' }}>Register Now</span>
+          </Link>
+        </li>
+      </ul>
+    </div>
 
-                            <li>
-                                <a onClick={()=>navigate('/VideoSection')} href="">About us</a>
-                               
-                            </li>
-                            <li>
-                                <a onClick={()=>navigate('/EventSchedule')} href="">Event Schedule</a>
-                                
-                            </li>
-                            <li>
-                                <a onClick={()=>navigate('/OurSpeaker')} href="">Speakers</a>
-                                
-                            </li>
-                            <li>
-                              <a className='register-now' onClick={()=>navigate('/SelectLanguage')} href="" ><AssignmentIcon sx={{color:"white"}}/><span style={{color:"white"}}>Register Now </span></a>
-
-                              </li>
-                        </ul>
-                       
-                    </div>
+    
                         
-                    <div onClick={toggleDrawer}  className="header-bar d-lg-none">
+                    {/* <div onClick={toggleDrawer}  className="header-bar d-lg-none">
+                            <span>one</span>
+                            <span>two</span>
+                            <span>three</span>
+                        </div> */}
+
+                        <div className="resNav">
+                          <div style={{marginTop:"20px"}} onClick={toggleDrawer}  className="header-bar d-lg-none">
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
+                          <SwipeableTemporaryDrawer/>
+                          </div>
                 
             </div>
           </div>

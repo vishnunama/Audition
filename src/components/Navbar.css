@@ -69,8 +69,28 @@
   border-radius: 2px;
   transition: background-image 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
-@media (max-width: 575px) {.header-bar {
+
+
+.resNav {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  
+  .header-bar {
   width: 30px;
   height: 20px;
   margin: 15px;
-}}
+}
+
+
+
+
+}
+
+@media (max-width: 990px) {
+  
+  .resNav {
+      display: block;
+    }
+}

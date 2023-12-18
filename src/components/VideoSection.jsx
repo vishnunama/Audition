@@ -13,7 +13,7 @@ function VideoSection() {
       <div className="row justify-content-center">
         <div className="col-lg-10">
           <div className="about-image">
-            <img style={{height:"80vh",width:"100%"}} src="/75.png" alt="about image" />
+            <img style={{height:"70%",width:"100%"}} src="/75.png" alt="about image" />
           </div>
         </div>
         <div className="col-lg-10">

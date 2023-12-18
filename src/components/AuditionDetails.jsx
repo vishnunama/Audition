@@ -73,7 +73,7 @@ function AuditionDetails() {
             <br />
           </div>
           <div className="lg:w-1/2 pr-4 lg:pl-4 md:w-1/2 pr-4 pl-4 sm:w-full pr-4 pl-4">
-            <img style={{ width: '70vh', height: '60vh' }} src="/81.png" alt="Vision Image" />
+            <img style={{ width: '100%', height: '100%'}} src="/83.png" alt="Vision Image" />
           </div>
           </div>
           
