@@ -90,12 +90,8 @@ function Navbar() {
                             <span>three</span>
                         </div> */}
 
-                        <div className="resNav">
-                          <div style={{marginTop:"20px"}} onClick={toggleDrawer}  className="header-bar d-lg-none">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+                        <div style={{margin:"20px"}} className="resNav">
+                          
                           <SwipeableTemporaryDrawer/>
                           </div>
                 

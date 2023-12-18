@@ -11,11 +11,14 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { useNavigate } from 'react-router-dom';
-
+import { TfiMenu } from "react-icons/tfi";
+    
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = React.useState({
     top: false,
   });
+
+ 
 
   const navigate = useNavigate();
 
@@ -40,11 +43,11 @@ export default function SwipeableTemporaryDrawer() {
       case 'About us':
         navigate('/VideoSection'); // Replace '/about' with your actual about route
         break;
-        case 'EventSchedule':
+        case 'Event Schedule':
         navigate('/EventSchedule'); // Replace '/about' with your actual about route
         break;
 
-        case 'OurSpeaker':
+        case 'Our Speaker':
         navigate('/OurSpeaker'); // Replace '/about' with your actual about route
         break;
       // Add more cases for other menu items
@@ -61,32 +64,36 @@ export default function SwipeableTemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Home', 'About us', 'EventSchedule', 'OurSpeaker'].map((text, index) => (
+        {['Home', 'About us', 'Event Schedule', 'Our Speaker'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton onClick={() => handleListItemClick(text)}>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
           </ListItem>
         ))}
       </List>
+
       <Divider />
     </Box>
+ 
   );
 
   return (
     <div>
-      {['top'].map((anchor) => (
+      {["top"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          <Button style={{fontSize:"36px"}} onClick={toggleDrawer(anchor, true)}><TfiMenu/> </Button>
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}
             onClose={toggleDrawer(anchor, false)}
             onOpen={toggleDrawer(anchor, true)}
           >
+              
+
             {list(anchor)}
           </SwipeableDrawer>
         </React.Fragment>
