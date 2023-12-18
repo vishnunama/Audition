@@ -6,6 +6,12 @@ import QrCode from './QrCode';
 
 
 function Navbar() {
+  const [isDrawerOpen, setDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setDrawerOpen(!isDrawerOpen);
+  };
+ 
   const containerStyle = {
     display: 'flex',
     flexDirection: 'column',
@@ -42,6 +48,7 @@ function Navbar() {
       <img  src="/80.png" alt="logo" />
     </div>
             <div>
+              
                 <div className="menu-area">
                         <ul className="menu">
                             <li>
@@ -68,14 +75,12 @@ function Navbar() {
                        
                     </div>
                         
-                    <div className="header-bar d-lg-none">
+                    <div onClick={toggleDrawer}  className="header-bar d-lg-none">
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
-                <div className="ellepsis-bar d-lg-none">
-                            <i className="icofont-info-square"></i>
-                        </div>
+                
             </div>
           </div>
         </div>

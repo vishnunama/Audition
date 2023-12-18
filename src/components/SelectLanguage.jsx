@@ -1,21 +1,33 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import './SelectLanguage.css'; // Import your CSS file
 
 function SelectLanguage() {
   const navigate = useNavigate();
 
   return (
-    <div className="language-container">
-     <div className="language-container-in">
+    
+    <div className="p-10 md:pt-24 md:px-24 sm:p-10 bg-gradient-to-b from-[#000120] to-[#220056]">
       <div>
-      <h1 className="form-title">Fill Up This Form</h1>
-      <h3 className="language-option" onClick={() => navigate("/RegistrationPage")}>English</h3>
-      <h3 className="language-option" onClick={() => navigate("/HindiRegistrationPage")}>Hindi</h3>
+     <div className="language-container-in">
+      <div >
+     
+      <h1 style={{color:"#4680EF",fontFamily:"arial"}}  className="form-title">Fill Up This Form</h1>
+     <div>
+      
+      <button className="my-4 md:my-16 mx-8 px-14 md:px-24 py-3 bg-gradient-to-r from-[#F72585] to-[#7209B7] hover:from-[#7209B7] hover:to-[#F72585] text-xl text-white font-semibold drop-shadow-lg rounded-full" href="image" onClick={() => navigate("/RegistrationPage")}><ArrowRightAltIcon sx={{marginRight:"10px"}}/> English</button>
+      <button className="my-4 md:my-16 mx-8 px-14 md:px-24 py-3 bg-gradient-to-r from-[#F72585] to-[#7209B7] hover:from-[#7209B7] hover:to-[#F72585] text-xl text-white font-semibold drop-shadow-lg rounded-full" href="image" onClick={() => navigate("/RegistrationPage")}><ArrowRightAltIcon sx={{marginRight:"9px"}}/> Hindi</button>
       </div>
+      </div>
+     </div>
      </div>
     </div>
   );
 }
 
 export default SelectLanguage;
+
+
+
+<a target="_blank" className="my-4 md:my-16 mx-8 px-14 md:px-24 py-3 bg-gradient-to-r from-[#F72585] to-[#7209B7] hover:from-[#7209B7] hover:to-[#F72585] text-xl text-white font-semibold drop-shadow-lg rounded-full" href="image">English</a>

@@ -6,9 +6,9 @@ function EventSchedule() {
     <section className="schedule-section padding-tb padding-b bg-image">
   <div className="container">
     <div className="section-header">
-      <h2 style={{fontSize:"8vh"}}>Unleashing Artistic Excellence</h2>
-      <p style={{fontSize:"4vh",lineHeight:"6vh"}}>Diverse Auditions for All Genders:
- A Platform Where Male, Female, and Transgender Talent Shine!"</p>
+      <h1 style={{fontSize:"4vh", fontWeight:"600", fontFamily:"arial",color:"#457AEE"}}>Diverse Auditions for All Genders:
+ A Platform Where Male, Female, and Transgender Talent Shine</h1>
+      
     </div>
     <div className="section-wrapper">
       <div className="row gx-4 gy-5">
@@ -114,7 +114,7 @@ function EventSchedule() {
                       <span className="accor-thumb">
                         <img className='Event-image' src="/30.png" alt="speaker" />
                       </span>
-                      <span className="h7">Acting Audition:</span>
+                      <span className="h7">Acting Audition</span>
                     </span>
                   </button>
                 </div>
@@ -147,7 +147,7 @@ function EventSchedule() {
                       <span className="accor-thumb">
                         <img className='Event-image' src="/32.png" alt="speaker" />
                       </span>
-                      <span className="h7">Art and Visual Arts Audition:</span>
+                      <span className="h7">Art and Visual Arts Audition</span>
                     </span>
                   </button>
                 </div>
@@ -160,7 +160,7 @@ function EventSchedule() {
                       <span className="accor-thumb">
                         <img className='Event-image' src="/33.png" alt="speaker" />
                       </span>
-                      <span className="h7">Literary Audition:</span>
+                      <span className="h7">Literary Audition</span>
                     </span>
                   </button>
                 </div>
@@ -193,13 +193,13 @@ function EventSchedule() {
                 
               </div>
               <div className="accordion-item">
-                <div className="accordion-header" id="heading-Five">
-                  <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-Five" aria-expanded="true" aria-controls="collapse-Five">
+                <div className="accordion-header" id="heading-Four">
+                  <button className="accordion-button collapsed break-time" type="button">
                     <span className="accor-header-inner d-flex flex-wrap align-items-center">
                       <span className="accor-thumb">
                         <img className='Event-image' src="/34.png" alt="speaker" />
                       </span>
-                      <span className="h7">Solo Vocal Auditions</span>
+                      <span className="h7">solo vocal audition</span>
                     </span>
                   </button>
                 </div>

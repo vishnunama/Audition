@@ -15,12 +15,12 @@ import AssignmentIcon from '@mui/icons-material/Assignment';
 function OurSpeaker() {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="p-10 md:pt-24 md:px-24 sm:p-10 bg-gradient-to-b from-[#000120] to-[#220056]">
        <section className="speakers-section padding-tb padding-b shape-img">
-  <div className="container">
+  <div className="container-4">
     <div className="section-header">
       <h2 style={{fontSize:"8vh"}}>Our Speakers</h2>
-      <p>Meet Our World’s Leading Speakers</p>
+      <p style={{color:"white"}}>Meet Our World’s Leading Speakers</p>
     </div>
     <div className="section-wrapper">
       <div className="row g-4 justify-content-center">
@@ -28,12 +28,12 @@ function OurSpeaker() {
           <div className="speaker-item">
             <div className="speaker-inner">
               <div className="speaker-thumb">
-                <img src="/68.png" alt="speaker" />
+                <img  src="/84.png" alt="speaker" />
               </div>
               <div className="speaker-content">
                 <div className="spkr-content-title d-flex flex-wrap justify-content-between">
                   <div className="speaker-infos">
-                    <h5><a href="speaker-details.html">Ishan sharma</a> </h5>
+                    <h5><a style={{ textDecoration: 'none' }}href="speaker-details.html">Ishan sharma</a> </h5>
                     <p>Speaker</p>
                   </div>
                   <div className="speaker-comp-logo">
@@ -61,7 +61,7 @@ function OurSpeaker() {
               <div className="speaker-content">
                 <div className="spkr-content-title d-flex flex-wrap justify-content-between">
                   <div className="speaker-infos">
-                    <h5><a href="speaker-details.html">Arjun sharma</a> </h5>
+                    <h5><a  style={{ textDecoration: 'none' }} href="speaker-details.html">Arjun sharma</a> </h5>
                     <p>Speaker</p>
                   </div>
                   <div className="speaker-comp-logo">

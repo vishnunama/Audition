@@ -1,4 +1,6 @@
-
+.place-text{
+    color: white;
+}
 
 .industries-sec {
     /* background: url(../images/industries-bg.jpg) center top no-repeat; */
@@ -202,7 +204,7 @@
     }
 
     .industries-list ul li {
-        width: 50%
+        width: 30%
     }
 
     .industries-area a {
@@ -216,6 +218,12 @@
     .industries-area {
         width: 100%
     }
+}
+@media(max-width:574px){
+    .industries-list ul li {
+            width: 100%
+        }
+
 }
 
 /* web development  */
@@ -332,10 +340,10 @@ p {
 .design-title {
     font-size: 1rem;
 }
-.container{
+.container-3{
     margin-bottom: 30px;
     margin-top: 50px;
 }
-.container h2{
+.container-3 h2{
     margin-bottom: 70px;
 }

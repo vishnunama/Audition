@@ -177,8 +177,24 @@ function RegistrationPage() {
         <option value={0}>Audition Categories</option>
         
         <option value={1}>Dance Event</option>
-        <option value={2}></option>
-        <option value={3}>Dark</option>
+        <option value={2}>Car Stunt</option>
+        <option value={3}>MoterBike Stunt</option>
+        <option value={3}>Music Audition</option>
+        <option value={3}>Audition Registration &amp; Event</option>
+        <option value={3}>choreography Event</option>
+        <option value={3}>Fashion Audition</option>
+        <option value={3}>Acting Audition</option>
+        <option value={3}>Live Music Performance</option>
+        <option value={3}>Art and Visual Arts Audition</option>
+        <option value={3}>Literary Audition</option>
+        <option value={3}>Photography Talent</option>
+        <option value={3}>Handi Craft</option>
+        <option value={3}>solo vocal audition</option>
+        <option value={3}>Songwriting Showcase</option>
+        <option value={3}>Cycle Event Audition</option>
+        <option value={3}>Stylist Talent</option>
+        <option value={3}>Digital Art Performance</option>
+
       </select>
                 </div>
               </div>
