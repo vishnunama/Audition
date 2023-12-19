@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Audition/static/css/main.f6dfcddb.css",
+    "main.js": "/Audition/static/js/main.389f6db9.js",
+    "static/js/787.7803b449.chunk.js": "/Audition/static/js/787.7803b449.chunk.js",
+    "static/media/04.png": "/Audition/static/media/04.7b1b24d680f8fbff84b5.png",
+    "static/media/bg.jpg": "/Audition/static/media/bg.787980f4e848b98a10f5.jpg",
+    "static/media/logo.svg": "/Audition/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Audition/index.html",
+    "main.f6dfcddb.css.map": "/Audition/static/css/main.f6dfcddb.css.map",
+    "main.389f6db9.js.map": "/Audition/static/js/main.389f6db9.js.map",
+    "787.7803b449.chunk.js.map": "/Audition/static/js/787.7803b449.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6dfcddb.css",
+    "static/js/main.389f6db9.js"
+  ]
+}
